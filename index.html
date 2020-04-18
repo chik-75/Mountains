@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="left">
+    <div class="left__balls">
+        <div class="left__balls_circle"></div>
+        <div class="left__balls_circle"></div>
+    </div>
+    <div class="left__balls_2">
+        <div class="left__balls_circle"></div>
+        <div class="left__balls_circle"></div>
+        <div class="left__balls_circle"></div>
+        <div class="left__balls_circle"></div>
+    </div>
+</div>
+<div class="content">
+    <div id="header">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <form class="search" action="">
+                <div>
+                    <input name="search" placeholder="" type="text" class="search_input">
+                </div>
+                <div class="search_icon_div">
+                    <button type="submit" class="search-btn"><img src="img/search-icon.png" class="search_icon" alt="">
+                    </button>
+                </div>
+            </form>
+            <ul>
+                <li>
+                    <a href="" class="link active">Home</a>
+                </li>
+                <li>
+                    <a href="" class="link">Class</a>
+
+                </li>
+                <li>
+                    <a href="" class="link">Tours</a>
+                </li>
+                <li>
+                    <a href="" class="link">Maps</a>
+                </li>
+                <li>
+                    <a href="" class="link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content_row">
+        <div class="left_col">
+            <div class="left__col_img_1">
+                <img src="img/mek.png" alt="">
+            </div>
+            <div class="left__col_text">
+                <div class="title">Hiking
+                    abroad
+                </div>
+                <div class="description">Live the adventure today</div>
+            </div>
+            <div class="left__col_img_2">
+                <img src="img/erku.png" alt="">
+            </div>
+        </div>
+        <div class="right_col">
+            <div class="right__line">
+
+            </div>
+            <div class="right__content">
+                Walking in nature as
+                <br>
+                a recreational
+                <br>
+                activity
+                <div class="button__zone">
+                    <button class="right__btn">START TODAY</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobile">
+            <div class="mobile__top">
+                <div class="mobile__title">
+                    Hiking
+                </div>
+                <div class="mobile__burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="mobile__icons">
+                <a href="#" style="color: black">
+                    <div class="icon__block inst_link">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="#" style="color: black">
+                    <div class="icon__block link_fb">
+                        <i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a href="#" style="color: black">
+                    <div class="icon__block link_tw">
+                        <i class="fab fa-twitter"></i></div>
+                </a>
+                <a href="#" style="color: black">
+                    <div class="icon__block link_vb">
+                        <i class="fab fa-viber"></i></div>
+                </a>
+            </div>
+            <div class="footer__icons_text mobile__site">
+                www.hiking.com
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="right">
+    <div class="right__burger">
+        <div class="right__burger_line"></div>
+        <div class="right__burger_line"></div>
+        <div class="right__burger_line"></div>
+    </div>
+    <div class="right__balls">
+        <div class="right__ball_circle"></div>
+        <div class="right__ball_circle"></div>
+    </div>
+    <div class="right__text">
+        Hiking
+    </div>
+</div>
+<div class="footer">
+    <div class="footer__icons ">
+        <a href="#" style="color: black">
+            <div class="icon__block inst_link">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </a>
+        <a href="#" style="color: black">
+            <div class="icon__block link_fb">
+                <i class="fab fa-facebook-f"></i></div>
+        </a>
+        <a href="#" style="color: black">
+            <div class="icon__block link_tw">
+                <i class="fab fa-twitter"></i></div>
+        </a>
+        <a href="#" style="color: black">
+            <div class="icon__block link_vb">
+                <i class="fab fa-viber"></i></div>
+        </a>
+    </div>
+    <div class="footer__icons_text">
+        www.hiking.com
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script>
+    $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
+
+    $("#menu-icon").on("click", function () {
+        $("nav").slideToggle();
+        $(this).toggleClass("active");
+    });
+
+
+</script>
+</body>
+
+</html>
